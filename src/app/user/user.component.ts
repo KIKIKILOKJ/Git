@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service'
 
 @Component({
   selector: 'app-user',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService:AppService) { }
+
+  userName:string;
+  userData:any;
+  repos:any;
+  search:boolean=false;
 
   ngOnInit() {
+  }
+
+  searchGithub(){
+    this.search = true;
+    this.appService.getProfile(this.userName).subscribe(res=>{
+      this.userData=res;
+      this.appService.getRepos(this.userData.repos_url).subscribe(res=>{
+        this.repos=res
+      });
+      this.search=false;
+    })
+    
   }
 
 }
