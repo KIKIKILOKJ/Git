@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
 import { GitFormComponent } from './git-form/git-form.component';
+import { RoutingModule } from './routing/routing.module'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { GitFormComponent } from './git-form/git-form.component';
     UserComponent,
     RepoComponent,
     GitFormComponent,
-    HttpClientModule
+    HttpClientModule,
+    RoutingModule
   ],
   imports: [
     BrowserModule,
