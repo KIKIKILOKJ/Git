@@ -14,12 +14,12 @@ import { RoutingModule } from './routing/routing.module'
     UserComponent,
     RepoComponent,
     GitFormComponent,
-    HttpClientModule,
-    RoutingModule
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
