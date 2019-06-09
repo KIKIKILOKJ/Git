@@ -20,5 +20,29 @@
          {{repoInfo.full_name}}
       </div>
    </div>
-
+   <div class="row">
+      <div class="col-md-5">
+         <h5>OWNER</h5>
+      </div>
+      <div class="col-md-7">
+         {{repoInfo.owner.login}}
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-5">
+         <h5>REPO URL:</h5>
+      </div>
+      <div class="col-md-7">
+         {{repoInfo._url}}
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-5">
+         <h5>WATCHERS:</h5>
+      </div>
+      <div class="col-md-7">
+         {{repoInfo.watchers}}
+      </div>
+   </div>
+   <button (click)="back()" class="btn btn-danger">BACK</button>
 </div>
