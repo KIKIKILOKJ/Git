@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-align:centre;">
+      <h1>GITHUB SERACH</h1>
+    </div>
+  </div>
+  <form style="border: 4px solid; padding:30px;" >
+    <div class="row">
+      <div class="col-md-7">
+        <input type="text" name="name" class="form-control" [(ngModel)]="name" placeholder="USERNAME">
+      </div>
+      <div class="col-md-5">
+        <button (click)="searchGithub()" class="btn btn-primary" style="width:100%;">SEARCH</button>
+      </div>
+    </div>
+  </form>
+  <div class="row" *ngIf="userData">
+    <div class="col-md-6">
+      <img src="{{userData.avatar_url}}" alt="NO AVATAR" style="width:100%;" class="responsive">
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-5">
+          <h3>USERNAME:</h3>
+        </div>
+        <div class="col-md-7">
+          {{userData.login}}
+        </div>
+      </div>
+      
+
+    </div>
+
+  </div>
+
+</div>
