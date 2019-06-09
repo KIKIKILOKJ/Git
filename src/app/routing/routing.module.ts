@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule, } from '@angular/router';
 import { UserComponent } from '../user/user.component';
-import { Repo } from '../repo';
 import { RepoComponent } from '../repo/repo.component';
 
 const routes: Routes=[
@@ -12,7 +11,7 @@ const routes: Routes=[
   },
 
   {
-    path:'repos/:name',
+    path:'repo/:name',
     component:RepoComponent
   },
 ];
