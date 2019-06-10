@@ -7,7 +7,7 @@ This application was directed by PETER KINYANJUI...
 -This application allows the user to search for a github user using their username and be able to see their details.
 
 ## Link
-
+https://kikikilokj.github.io/Git/
 
 ## BDD 
 |BEHAVIOUR|INPUT|OUTPUT|
