@@ -1,5 +1,23 @@
 # Git
 
+## Author
+This application was directed by PETER KINYANJUI...
+
+## Description
+-This application allows the user to search for a github user using their username and be able to see their details.
+
+## Link
+
+
+## BDD 
+|BEHAVIOUR|INPUT|OUTPUT|
+|--------:|-----:|-----:|
+|Show github user details|Github username|User information|
+|Refresh page|Press the refresh button|The page starts afresh for a fresh search|
+
+## Contact
+Incase of any challenges, you can reach me through: (petermax2004@gmail.com)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Development server
