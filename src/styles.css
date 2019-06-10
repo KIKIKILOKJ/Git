@@ -2,4 +2,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 .bg-img{
     background-color: dimgray;
+    background-image: url("https://cdn-images-1.medium.com/max/2400/0*goaFvkjpQM-0p0h6.");
+    background-position-x: 40%;
 }
