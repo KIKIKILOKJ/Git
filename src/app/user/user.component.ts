@@ -24,6 +24,7 @@ export class UserComponent implements OnInit {
       this.userData=res;
       this.appService.getRepos(this.userData.repos_url).subscribe(res=>{
         this.repos=res
+        console.log(this.repos);
       });
       this.search=false;
     })
