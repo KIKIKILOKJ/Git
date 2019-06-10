@@ -7,7 +7,8 @@ import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
 import { GitFormComponent } from './git-form/git-form.component';
 import { RoutingModule } from './routing/routing.module';
-import { DateCountPipe } from './date-count.pipe'
+import { DateCountPipe } from './date-count.pipe';
+import { StrikethroughDirective } from './strikethrough.directive'
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { DateCountPipe } from './date-count.pipe'
     RepoComponent,
     GitFormComponent,
     DateCountPipe,
+    StrikethroughDirective,
   ],
   imports: [
     BrowserModule,
